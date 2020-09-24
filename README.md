@@ -1,3 +1,8 @@
+## O Projeto
+
+![AlgaShopping](https://user-images.githubusercontent.com/11445748/94060051-4fea1100-fdb1-11ea-89be-59ad9041225f.gif)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
