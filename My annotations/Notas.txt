@@ -1,0 +1,28 @@
+# Notas do workshop #
+
+# Instala o pacote create-react-app de maneira global
+
+npm i -g create-react-app
+
+# Para criar um projeto com react
+
+npx create-react-app algashopping
+
+# Removendo arquivos do gerenciador do git, package-lock.json
+
+git rm package-lock.json
+
+
+
+
+# Convenção de estrutura de arquivos react
+
+> src
+	> assets
+	> components
+	> config*
+	> mocks 
+	> shared
+	> store
+	> utils
+
