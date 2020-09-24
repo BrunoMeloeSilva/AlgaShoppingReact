@@ -1,10 +1,11 @@
 import React from "react";
+import Header from "../Header/Header";
 import { Background, Painel } from "./App.style";
 
 function App() {
     return <Background>
             <Painel> 
-                Todo: Header
+                <Header/>
             </Painel>
     </Background>
 }
