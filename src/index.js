@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-
-const App = () => <div>Abertura do projeto</div>
+import HomeView from './views/Home.view';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HomeView />
   </React.StrictMode>,
   document.getElementById('root')
 );
