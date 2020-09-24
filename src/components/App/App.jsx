@@ -1,6 +1,12 @@
 import React from "react";
-import { Wrap } from "./App.style";
+import { Background, Painel } from "./App.style";
 
-const App = () => <Wrap>todo: home view</Wrap>
+function App() {
+    return <Background>
+            <Painel> 
+                Todo: Header
+            </Painel>
+    </Background>
+}
 
 export default App
