@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
+import { Wrap } from "./App.style";
 
-const App = () => <div className="App">todo: home view</div>
+const App = () => <Wrap>todo: home view</Wrap>
 
 export default App

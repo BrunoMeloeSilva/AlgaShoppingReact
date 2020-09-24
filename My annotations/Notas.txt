@@ -12,6 +12,19 @@ npx create-react-app algashopping
 
 git rm package-lock.json
 
+# Instalando um gerador de componenetes estlizados
+
+npm i styled-components
+
+
+
+
+
+# Para que se possa usar o auto-complet para css dentro das crases do styled-components
+
+Instalar a extension no vscode: vscode-styled-components
+
+
 
 
 
