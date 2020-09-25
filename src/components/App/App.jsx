@@ -83,7 +83,6 @@ function App() {
                                                                                 })}
                                         </div>
                                     </div>
-
                             </div>}/>
             </Painel>
     </Background>

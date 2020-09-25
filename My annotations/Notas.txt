@@ -16,9 +16,9 @@ git rm package-lock.json
 
 npm i styled-components
 
+# Instalando o Redux para usarmos compartilhamento global
 
-
-
+npm i react-redux redux
 
 # Para que se possa usar o auto-complet para css dentro das crases do styled-components
 
@@ -39,3 +39,10 @@ Instalar a extension no vscode: vscode-styled-components
 	> store
 	> utils
 
+
+
+
+
+# Sites recomendados para estudo
+
+https://facebook.github.io/flux/
