@@ -10,8 +10,17 @@ function App() {
 
     const [healthy, setHealthy] = useState(20)
     const [products, setproducts] = useState(productsMock.products)
+    const [selectedProducts, setSelectedProducts] = useState([])
 
     const colors = ['#62CBC6', '#00ABAD', '#00858C', '#006073', '#004D61']
+
+    /* Toda vez que houver uma alteração no estado products os componentes ligados a ele são atualizados e
+    essa funcao useEffect sera executada atualizando o estado selectedProducts que tambem irá atualizar os componentes
+    ligados a ele */
+    useEffect(() => {
+        const newSelectedProducts = products.filter(product => product.checked)
+        setSelectedProducts(newSelectedProducts)
+    },[products])
 
     function handleToggle(id) {
         const newProducts = products.map(
@@ -34,7 +43,9 @@ function App() {
                                 title = "produtos disponíveis:" 
                                 products = {products}
                                 onToggle = {handleToggle}/>}
-                    middle = {<ShoppingList title = "lista de compras:"/>}
+                    middle = {<ShoppingList title = "lista de compras:"
+                                            products = {selectedProducts}
+                                            onToggle = {handleToggle}/>}
                     right = {<div>estatiscas:
                                 <LineChart
                                     color = {colors[0]}
