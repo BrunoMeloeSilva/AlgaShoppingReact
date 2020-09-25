@@ -1,19 +1,18 @@
 import React from "react";
-import { connect } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { sum } from "../store/Calculator/Calculator.actions";
 
-function Calculator(props) {
+function Calculator() {
+    
+    const dispatch = useDispatch()
+    const result = useSelector(state => state.calculator)
+
     return <>
         <input type="text" placeholder="Informe valor a"/>
         <input type="text" placeholder="Informe valor b"/>
-        <button>Somar</button>
-        <div>Resultado: {props.result}</div>
+        <button onClick = {() => { dispatch(sum(1,5)) }}>Somar</button>
+        <div>Resultado: {result}</div>
     </>
 }
 
-function mapStateToProps(state) {
-    return {
-        result: state.calculator
-    }
-}
-
-export default connect(mapStateToProps)(Calculator)
+export default Calculator

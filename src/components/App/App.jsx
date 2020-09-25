@@ -6,6 +6,7 @@ import ShoppingList from "../ShoppingList/ShoppingList";
 import { Background, Painel } from "./App.style";
 import productsMock from "../../mocks/products.json";
 import extractPercentage from "../../utils/extractPercentage";
+import Calculator from "../Calculator";
 
 function App() {
 
@@ -82,8 +83,10 @@ function App() {
                                                                                     currency: 'BRL'
                                                                                 })}
                                         </div>
+                                        <Calculator/>
                                     </div>
-                            </div>}/>
+                            </div>
+                        }/>
             </Painel>
     </Background>
 }
