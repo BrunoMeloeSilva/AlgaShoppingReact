@@ -43,6 +43,8 @@ Instalar a extension no vscode: vscode-styled-components
 
 
 
-# Sites recomendados para estudo
+# Sites recomendados para estudo e dicas
 
 https://facebook.github.io/flux/
+
+console.table() : Imprime os dados do array de forma tabulada no console

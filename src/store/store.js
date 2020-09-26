@@ -1,8 +1,8 @@
 import { createStore, combineReducers } from "redux";
-import CalculatorReducer from "./Calculator/Calculator.reducer";
+import ProductsReducer from "./Products/Products.reducer";
 
 const store = createStore(combineReducers({
-    calculator: CalculatorReducer
+    products: ProductsReducer
 }))
 
 export default store

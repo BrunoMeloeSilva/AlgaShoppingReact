@@ -1,36 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Header from "../Header/Header";
 import LineChart from "../LineChart/LineChart";
 import Main from "../Main/Main.jsx";
 import ShoppingList from "../ShoppingList/ShoppingList";
 import { Background, Painel } from "./App.style";
-import productsMock from "../../mocks/products.json";
 import extractPercentage from "../../utils/extractPercentage";
-import Calculator from "../Calculator";
+import { useDispatch, useSelector } from "react-redux";
+import { selectSelectedProducts, selectSelectedProductsTotalPrice } from "../../store/Products/Products.selectors";
+import { toggleProduct } from "../../store/Products/Products.actions";
 
 function App() {
 
-    const [products, setproducts] = useState(productsMock.products)
-    const [selectedProducts, setSelectedProducts] = useState([])
-    const [totalPrice, setTotalPrice] = useState(0)
+    const selectedProducts = useSelector(selectSelectedProducts)
+    const totalPrice = useSelector(selectSelectedProductsTotalPrice)
+    const dispatch = useDispatch()
 
     const colors = ['#62CBC6', '#00ABAD', '#00858C', '#006073', '#004D61']
 
-    useEffect(() => {
-        const total = selectedProducts.reduce((total, product) => total + product.price, 0)
-        setTotalPrice(total)
-    },[selectedProducts])
-
-    useEffect(() => {
-        const newSelectedProducts = products.filter(product => product.checked)
-        setSelectedProducts(newSelectedProducts)
-    },[products])
-
     function handleToggle(id) {
-        const newProducts = products.map(
-            product => product.id === id ? {...product, checked: !product.checked } : product 
-        )
-        setproducts(newProducts)
+        dispatch(toggleProduct(id))
     }
 
     return <Background>
@@ -39,10 +27,9 @@ function App() {
                 <Main
                     left = {<ShoppingList 
                                 title = "produtos disponíveis:" 
-                                products = {products}
                                 onToggle = {handleToggle}/>}
                     middle = {<ShoppingList title = "lista de compras:"
-                                            products = {selectedProducts}
+                                            displayOnlySelected
                                             onToggle = {handleToggle}/>}
                     right = {<div>estatiscas:
                                 <LineChart
@@ -83,7 +70,6 @@ function App() {
                                                                                     currency: 'BRL'
                                                                                 })}
                                         </div>
-                                        <Calculator/>
                                     </div>
                             </div>
                         }/>
