@@ -1,8 +1,16 @@
 import { createStore, combineReducers } from "redux";
 import ProductsReducer from "./Products/Products.reducer";
+import { persistStore, persistReducer } from 'redux-persist'
+import storage from 'redux-persist/lib/storage'
 
-const store = createStore(combineReducers({
+const rootReducer = combineReducers({
     products: ProductsReducer
-}))
+})
 
-export default store
+const persistedReducer = persistReducer({
+    key: 'root',
+    storage
+}, rootReducer)
+
+export const store = createStore(persistedReducer)
+export const persistedStore = persistStore(store)
