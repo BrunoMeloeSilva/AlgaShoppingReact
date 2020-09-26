@@ -12,8 +12,8 @@ function Calculator() {
     return <>
         <input type="text" placeholder="Informe valor a" onChange = {e => setA(e.target.value)}/>
         <input type="text" placeholder="Informe valor b" onChange = {e => setB(e.target.value)}/>
-        <button onClick = {() => { dispatch(sum(a, b)) }}>Somar</button>
-        <button onClick = {() => { dispatch(subtract(a, b)) }}>Subtrair</button>
+        <button onClick = {() => dispatch(sum(a, b)) }>Somar</button>
+        <button onClick = {() => dispatch(subtract(a, b)) }>Subtrair</button>
         <div>Resultado: {result}</div>
     </>
 }
