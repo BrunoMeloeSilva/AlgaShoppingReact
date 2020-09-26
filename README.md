@@ -1,5 +1,7 @@
 ## O Projeto
 
+Ele foi construído com Node.js no VS-Code, mais detalhes da configuração veja as anotações em My annotations / Notas.txt nos arquivos do projeto.
+
 ![AlgaShopping](https://user-images.githubusercontent.com/11445748/94060051-4fea1100-fdb1-11ea-89be-59ad9041225f.gif)
 
 ## Ideia geral dos componentes no projeto<table>
