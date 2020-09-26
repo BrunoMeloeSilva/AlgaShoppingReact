@@ -6,8 +6,8 @@
 	
  <tbody>
   <tr>
-   <td><img src=![Componentes do Projeto](https://user-images.githubusercontent.com/11445748/94346417-8070bb80-fffa-11ea-9747-92e58b12079b.png)></td>
-   <td><img src=![ExemploEstruturaComponentes](https://user-images.githubusercontent.com/11445748/94346500-05f46b80-fffb-11ea-9aca-9907b12b9e55.png)></td>
+   <td><img src="![Componentes do Projeto](https://user-images.githubusercontent.com/11445748/94346417-8070bb80-fffa-11ea-9747-92e58b12079b.png)"></td>
+   <td><img src="![ExemploEstruturaComponentes](https://user-images.githubusercontent.com/11445748/94346500-05f46b80-fffb-11ea-9aca-9907b12b9e55.png)"></td>
   </tr>
 </tbody>
 </table>
