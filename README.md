@@ -2,6 +2,9 @@
 
 ![AlgaShopping](https://user-images.githubusercontent.com/11445748/94060051-4fea1100-fdb1-11ea-89be-59ad9041225f.gif)
 
+## Ideia geral dos componentes no projeto
+
+![Componentes do Projeto](https://user-images.githubusercontent.com/11445748/94346417-8070bb80-fffa-11ea-9747-92e58b12079b.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
