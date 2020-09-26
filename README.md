@@ -4,13 +4,8 @@
 
 ## Ideia geral dos componentes no projeto<table>
 	
- <tbody>
-  <tr>
-   <td><img src="![Componentes do Projeto](https://user-images.githubusercontent.com/11445748/94346417-8070bb80-fffa-11ea-9747-92e58b12079b.png)"></td>
-   <td><img src="![ExemploEstruturaComponentes](https://user-images.githubusercontent.com/11445748/94346500-05f46b80-fffb-11ea-9aca-9907b12b9e55.png)"></td>
-  </tr>
-</tbody>
-</table>
+![Componentes do Projeto](https://user-images.githubusercontent.com/11445748/94346417-8070bb80-fffa-11ea-9747-92e58b12079b.png)
+![ExemploEstruturaComponentes](https://user-images.githubusercontent.com/11445748/94346500-05f46b80-fffb-11ea-9aca-9907b12b9e55.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
